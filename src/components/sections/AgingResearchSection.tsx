@@ -92,7 +92,7 @@ export default function AgingResearchSection({
             >
               Here&apos;s an example
             </a>{" "}
-            of a very compelling one but length one, we encourage high quality
+            of a very compelling one but lengthly one, we encourage high quality
             one-pagers.
           </p>
 
