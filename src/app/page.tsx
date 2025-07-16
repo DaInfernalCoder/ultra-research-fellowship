@@ -155,22 +155,36 @@ export default function Home() {
           {/* Lab Logos */}
           <div className="flex items-center justify-center gap-16 md:gap-24">
             <div className="flex items-center">
-              <Image
-                src="/Age1.png"
-                alt="Age1"
-                width={200}
-                height={80}
-                className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity"
-              />
+              <a
+                href="https://age1.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Image
+                  src="/Age1.png"
+                  alt="Age1"
+                  width={200}
+                  height={80}
+                  className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+                />
+              </a>
             </div>
             <div className="flex items-center">
-              <Image
-                src="/Norn Group Transparent Logo.png"
-                alt="Norn Group"
-                width={200}
-                height={80}
-                className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity"
-              />
+              <a
+                href="https://norn.group/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Image
+                  src="/Norn Group Transparent Logo.png"
+                  alt="Norn Group"
+                  width={200}
+                  height={80}
+                  className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+                />
+              </a>
             </div>
           </div>
         </div>
