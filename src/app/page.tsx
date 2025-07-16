@@ -149,7 +149,7 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center py-20 md:py-32 px-12 md:px-16 lg:px-20">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-16">
-            Work with Researchers from groundbreaking labs
+            Our Partner Labs
           </h2>
 
           {/* Lab Logos */}
@@ -399,24 +399,6 @@ export default function Home() {
                     </p>
 
                     <div className="space-y-4 mb-8">
-                      <div className="flex items-center gap-3">
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="text-yellow-400"
-                        >
-                          <path d="M20 6 9 17l-5-5" />
-                        </svg>
-                        <span className="text-gray-300">
-                          $200,000 funding over 2 years
-                        </span>
-                      </div>
                       <div className="flex items-center gap-3">
                         <svg
                           width="16"
