@@ -392,10 +392,31 @@ export default function Home() {
                   <div className="border border-gray-700 rounded-lg p-8">
                     <h3 className="text-2xl font-bold mb-6">Ready to Apply?</h3>
 
+                    <p className="text-gray-300 mb-4">
+                      Skip the cold outreach. Submit a research brief that
+                      showcases your genuine curiosity and investigation into
+                      aging research.
+                    </p>
+
+                    <p className="text-gray-300 mb-4">
+                      Write an ACX-style essay on a topic you&apos;re passionate
+                      about - raw investigation, not academic formality. The
+                      best submissions get published on our Substack and
+                      connected directly to PhD researchers, professors, and
+                      labs that match your interests.
+                    </p>
+
                     <p className="text-gray-300 mb-6">
-                      Applications for the Aging Research track are now open.
-                      Join researchers working on humanity&apos;s greatest
-                      challenge.
+                      <a
+                        href="https://www.astralcodexten.com/p/your-review-alpha-school"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-yellow-400 hover:text-yellow-300 underline"
+                      >
+                        Here&apos;s an example
+                      </a>{" "}
+                      of a very compelling one but length one, we encourage high
+                      quality one-pagers.
                     </p>
 
                     <div className="space-y-4 mb-8">
@@ -414,7 +435,7 @@ export default function Home() {
                           <path d="M20 6 9 17l-5-5" />
                         </svg>
                         <span className="text-gray-300">
-                          Expert mentorship network
+                          Direct connection to matching PhD researchers & labs
                         </span>
                       </div>
                       <div className="flex items-center gap-3">
@@ -432,7 +453,25 @@ export default function Home() {
                           <path d="M20 6 9 17l-5-5" />
                         </svg>
                         <span className="text-gray-300">
-                          Research collaboration opportunities
+                          Best submissions published on our Substack
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="text-yellow-400"
+                        >
+                          <path d="M20 6 9 17l-5-5" />
+                        </svg>
+                        <span className="text-gray-300">
+                          Expert feedback & mentorship opportunities
                         </span>
                       </div>
                     </div>
