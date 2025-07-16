@@ -1,0 +1,1 @@
+export type ResearchView = "selection" | "aging" | "space" | "education"; 
