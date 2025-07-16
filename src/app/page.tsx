@@ -476,6 +476,43 @@ export default function Home() {
                       </div>
                     </div>
 
+                    <div className="mb-8">
+                      <p className="text-gray-300 mb-4 text-sm">
+                        If accepted, you&apos;ll be matched with an expert from
+                        one of these organizations. Check out their work!
+                      </p>
+                      <div className="flex items-center justify-center gap-6">
+                        <a
+                          href="https://age1.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block opacity-80 hover:opacity-100 transition-opacity"
+                        >
+                          <Image
+                            src="/Age1.png"
+                            alt="Age1"
+                            width={80}
+                            height={32}
+                            className="h-10 w-auto"
+                          />
+                        </a>
+                        <a
+                          href="https://norn.group/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block opacity-80 hover:opacity-100 transition-opacity"
+                        >
+                          <Image
+                            src="/Norn Group Transparent Logo.png"
+                            alt="Norn Group"
+                            width={80}
+                            height={32}
+                            className="h-10 w-auto"
+                          />
+                        </a>
+                      </div>
+                    </div>
+
                     <button className="w-full bg-yellow-400 text-black font-medium py-4 px-6 rounded hover:bg-yellow-300 transition-colors text-lg">
                       Apply for Aging Research
                     </button>
