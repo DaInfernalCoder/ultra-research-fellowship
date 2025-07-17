@@ -122,7 +122,7 @@ export default function Header({ onApplyClick }: HeaderProps) {
           onClick={onApplyClick}
           className="border border-white px-4 py-2 hover:bg-white hover:text-black transition-colors"
         >
-          Apply
+          Choose a Topic
         </button>
       </nav>
 
@@ -213,7 +213,7 @@ export default function Header({ onApplyClick }: HeaderProps) {
                   onClick={handleApplyClick}
                   className="w-full border border-white text-white py-3 px-6 rounded hover:bg-white hover:text-black transition-colors mt-8"
                 >
-                  Apply
+                  Choose a Topic
                 </button>
               </nav>
             </div>
