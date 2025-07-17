@@ -9,8 +9,7 @@ export default function HeroSection({ onApplyClick }: HeroSectionProps) {
       <p className="text-sm md:text-base text-gray-300 mb-8 max-w-2xl leading-relaxed">
         The Ultra Research Fellowship directly connects the top 1% of ambitious
         high school students with top PhD researchers to conduct research in
-        select fields. Stop wasting time cold-emailing thousands of professors.
-        Start becoming an expert in your field.
+        select fields.
       </p>
 
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
