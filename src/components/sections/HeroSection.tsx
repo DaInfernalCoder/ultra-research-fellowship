@@ -27,7 +27,7 @@ export default function HeroSection({ onApplyClick }: HeroSectionProps) {
         onClick={onApplyClick}
         className="inline-flex items-center text-base md:text-lg lg:text-xl font-medium hover:text-gray-300 transition-colors group"
       >
-        Apply Now
+        Choose a Topic
         <span className="ml-2 group-hover:translate-x-1 transition-transform">
           →
         </span>
