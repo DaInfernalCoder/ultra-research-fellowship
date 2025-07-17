@@ -4,11 +4,13 @@ import { ResearchView } from "@/types";
 interface AgingResearchSectionProps {
   currentView: ResearchView;
   setCurrentView: (view: ResearchView) => void;
+  triggerConfetti: () => void;
 }
 
 export default function AgingResearchSection({
   currentView,
   setCurrentView,
+  triggerConfetti,
 }: AgingResearchSectionProps) {
   if (currentView !== "aging") return null;
 
@@ -199,6 +201,7 @@ export default function AgingResearchSection({
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full bg-gradient-to-r from-blue-400 to-white text-black font-medium py-3 md:py-4 px-6 rounded hover:from-blue-300 hover:to-gray-100 transition-all text-base md:text-lg text-center"
+            onClick={triggerConfetti}
           >
             Apply for Aging Research
           </a>

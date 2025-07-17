@@ -4,6 +4,7 @@ interface ResearchFocusSectionProps {
   currentView: ResearchView;
   selectedTopic: SelectedTopic;
   setSelectedTopic: (topic: SelectedTopic) => void;
+  triggerConfetti: () => void;
 }
 
 // Theme color mapping for each research area
@@ -54,6 +55,7 @@ export default function ResearchFocusSection({
   currentView,
   selectedTopic,
   setSelectedTopic,
+  triggerConfetti,
 }: ResearchFocusSectionProps) {
   if (currentView !== "selection") return null;
 
@@ -68,12 +70,12 @@ export default function ResearchFocusSection({
       </h2>
 
       {/* Collapsed Topic Cards */}
-      <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center">
+      <div className="flex flex-col sm:flex-row gap-4 md:gap-6 mx-2 md:mx-4">
         {/* Aging Research Card */}
         <div
-          className={`border rounded-lg p-4 md:p-6 hover:border-[#00d2a0] transition-colors cursor-pointer ${
+          className={`border rounded-lg p-4 md:p-6 hover:border-[#00d2a0] transition-colors cursor-pointer flex-1 ${
             selectedTopic === "aging"
-              ? "border-[#00d2a0] bg-gradient-to-r from-[#00d2a0]/10 to-[#00d2a0]/5"
+              ? "border-[#00d2a0] bg-[#00d2a0]/5"
               : "border-gray-700"
           }`}
           onClick={() => setSelectedTopic("aging")}
@@ -96,6 +98,10 @@ export default function ResearchFocusSection({
             </div>
             <button
               className={`px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r ${agingTheme.gradient} ${agingTheme.buttonText} text-sm font-medium rounded ${agingTheme.gradientHover} transition-all`}
+              onClick={(e) => {
+                e.stopPropagation();
+                triggerConfetti();
+              }}
             >
               Choose
             </button>
@@ -104,9 +110,9 @@ export default function ResearchFocusSection({
 
         {/* Space Research Card */}
         <div
-          className={`border rounded-lg p-4 md:p-6 hover:border-blue-400 transition-colors cursor-pointer ${
+          className={`border rounded-lg p-4 md:p-6 hover:border-gray-600 transition-colors cursor-pointer flex-1 ${
             selectedTopic === "space"
-              ? "border-blue-400 bg-gradient-to-r from-blue-400/10 to-blue-400/5"
+              ? "border-gray-500 bg-gray-500/5"
               : "border-gray-700"
           }`}
           onClick={() => setSelectedTopic("space")}
@@ -127,7 +133,13 @@ export default function ResearchFocusSection({
                 Propulsion & habitats
               </p>
             </div>
-            <button className="px-3 py-1.5 md:px-4 md:py-2 border border-gray-600 text-gray-400 text-sm font-medium rounded cursor-not-allowed">
+            <button
+              className="px-3 py-1.5 md:px-4 md:py-2 border border-gray-600 text-gray-400 text-sm font-medium rounded cursor-not-allowed"
+              onClick={(e) => {
+                e.stopPropagation();
+                triggerConfetti();
+              }}
+            >
               Choose
             </button>
           </div>
@@ -135,9 +147,9 @@ export default function ResearchFocusSection({
 
         {/* Education Research Card */}
         <div
-          className={`border rounded-lg p-4 md:p-6 hover:border-yellow-400 transition-colors cursor-pointer ${
+          className={`border rounded-lg p-4 md:p-6 hover:border-gray-600 transition-colors cursor-pointer flex-1 ${
             selectedTopic === "education"
-              ? "border-yellow-400 bg-gradient-to-r from-yellow-400/10 to-yellow-400/5"
+              ? "border-gray-500 bg-gray-500/5"
               : "border-gray-700"
           }`}
           onClick={() => setSelectedTopic("education")}
@@ -158,7 +170,13 @@ export default function ResearchFocusSection({
                 Learning & cognition
               </p>
             </div>
-            <button className="px-3 py-1.5 md:px-4 md:py-2 border border-gray-600 text-gray-400 text-sm font-medium rounded cursor-not-allowed">
+            <button
+              className="px-3 py-1.5 md:px-4 md:py-2 border border-gray-600 text-gray-400 text-sm font-medium rounded cursor-not-allowed"
+              onClick={(e) => {
+                e.stopPropagation();
+                triggerConfetti();
+              }}
+            >
               Choose
             </button>
           </div>
