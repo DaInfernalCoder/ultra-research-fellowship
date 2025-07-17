@@ -12,16 +12,16 @@ export default function HeroSection({ onApplyClick }: HeroSectionProps) {
         select fields.
       </p>
 
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8">
+      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-12">
         Work on the world&apos;s
         <br />
         most talent-starved
         <br />
-        problems.
+        <span className="relative">
+          problems.
+          <div className="absolute -bottom-1 left-0 right-2 h-1 bg-yellow-400"></div>
+        </span>
       </h1>
-
-      {/* Yellow underline accent */}
-      <div className="w-24 h-1 bg-yellow-400 mb-12"></div>
 
       <button
         onClick={onApplyClick}
