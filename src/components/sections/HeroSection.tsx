@@ -28,7 +28,7 @@ export default function HeroSection({ onApplyClick }: HeroSectionProps) {
         onClick={onApplyClick}
         className="inline-flex items-center text-lg md:text-xl font-medium hover:text-gray-300 transition-colors group"
       >
-        Apply Now For Cohort 1
+        Apply Now
         <span className="ml-2 group-hover:translate-x-1 transition-transform">
           →
         </span>
