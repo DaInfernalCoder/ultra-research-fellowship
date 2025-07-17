@@ -5,7 +5,6 @@ import ComingSoonContent from "./ComingSoonContent";
 
 interface ResourcesDisplayProps {
   selectedTopic: SelectedTopic;
-  triggerConfetti: () => void;
 }
 
 // Theme color mapping based on research area
@@ -64,7 +63,6 @@ const getThemeColors = (topic: SelectedTopic): ThemeColors => {
 
 export default function ResourcesDisplay({
   selectedTopic,
-  triggerConfetti,
 }: ResourcesDisplayProps) {
   const themeColors = getThemeColors(selectedTopic);
 
@@ -97,7 +95,6 @@ export default function ResourcesDisplay({
           >
             <AgingResourcesContent
               themeColors={themeColors}
-              triggerConfetti={triggerConfetti}
             />
           </motion.div>
         )}

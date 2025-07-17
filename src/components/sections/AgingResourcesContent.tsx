@@ -3,12 +3,10 @@ import { ThemeColors } from "@/types";
 
 interface AgingResourcesContentProps {
   themeColors: ThemeColors;
-  triggerConfetti: () => void;
 }
 
 export default function AgingResourcesContent({
   themeColors,
-  triggerConfetti,
 }: AgingResourcesContentProps) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mx-2 md:mx-4">
@@ -181,7 +179,6 @@ export default function AgingResourcesContent({
           target="_blank"
           rel="noopener noreferrer"
           className={`block w-full ${themeColors.button} ${themeColors.buttonText} font-medium py-3 md:py-4 px-6 rounded transition-colors text-base md:text-lg text-center`}
-          onClick={triggerConfetti}
         >
           Apply for Aging Research
         </a>

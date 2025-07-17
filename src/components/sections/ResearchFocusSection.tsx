@@ -4,7 +4,6 @@ interface ResearchFocusSectionProps {
   currentView: ResearchView;
   selectedTopic: SelectedTopic;
   setSelectedTopic: (topic: SelectedTopic) => void;
-  triggerConfetti: () => void;
 }
 
 // Theme color mapping for each research area
@@ -55,7 +54,6 @@ export default function ResearchFocusSection({
   currentView,
   selectedTopic,
   setSelectedTopic,
-  triggerConfetti,
 }: ResearchFocusSectionProps) {
   if (currentView !== "selection") return null;
 
@@ -101,7 +99,6 @@ export default function ResearchFocusSection({
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedTopic("aging");
-                triggerConfetti();
               }}
             >
               Choose
@@ -118,7 +115,6 @@ export default function ResearchFocusSection({
           }`}
           onClick={() => {
             setSelectedTopic("space");
-            triggerConfetti();
           }}
         >
           <div className="flex items-center gap-3 md:gap-4">
@@ -142,7 +138,6 @@ export default function ResearchFocusSection({
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedTopic("space");
-                triggerConfetti();
               }}
             >
               Choose
@@ -159,7 +154,6 @@ export default function ResearchFocusSection({
           }`}
           onClick={() => {
             setSelectedTopic("education");
-            triggerConfetti();
           }}
         >
           <div className="flex items-center gap-3 md:gap-4">
@@ -183,7 +177,6 @@ export default function ResearchFocusSection({
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedTopic("education");
-                triggerConfetti();
               }}
             >
               Choose
