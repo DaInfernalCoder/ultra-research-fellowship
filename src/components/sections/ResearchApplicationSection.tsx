@@ -10,13 +10,11 @@ import AgingResearchSection from "./AgingResearchSection";
 interface ResearchApplicationSectionProps {
   currentView: ResearchView;
   setCurrentView: (view: ResearchView) => void;
-  triggerConfetti: () => void;
 }
 
 export default function ResearchApplicationSection({
   currentView,
   setCurrentView,
-  triggerConfetti,
 }: ResearchApplicationSectionProps) {
   const [selectedTopic, setSelectedTopic] = useState<SelectedTopic>("aging");
 
@@ -39,12 +37,10 @@ export default function ResearchApplicationSection({
               currentView={currentView}
               selectedTopic={selectedTopic}
               setSelectedTopic={setSelectedTopic}
-              triggerConfetti={triggerConfetti}
             />
 
             <ResourcesDisplay
               selectedTopic={selectedTopic}
-              triggerConfetti={triggerConfetti}
             />
           </motion.div>
         )}
@@ -60,7 +56,6 @@ export default function ResearchApplicationSection({
             <AgingResearchSection
               currentView={currentView}
               setCurrentView={setCurrentView}
-              triggerConfetti={triggerConfetti}
             />
           </motion.div>
         )}
