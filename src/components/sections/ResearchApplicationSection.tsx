@@ -16,14 +16,14 @@ export default function ResearchApplicationSection({
   currentView,
   setCurrentView,
 }: ResearchApplicationSectionProps) {
-  const [selectedTopic, setSelectedTopic] = useState<SelectedTopic>(null);
+  const [selectedTopic, setSelectedTopic] = useState<SelectedTopic>("aging");
 
   return (
     <section
       id="research-focus"
-      className="min-h-screen flex items-center justify-center py-16 md:py-24 px-6 md:px-12 lg:px-16 xl:px-20"
+      className="min-h-screen flex items-center justify-center py-16 md:py-24 px-6 md:px-12 lg:px-16 xl:px-20 max-w-6xl mx-auto w-full"
     >
-      <div className="max-w-7xl mx-auto w-full">
+      <div className="w-full">
         <AnimatePresence mode="wait">
           {currentView === "selection" && (
             <motion.div

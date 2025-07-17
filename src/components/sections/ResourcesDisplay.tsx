@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { SelectedTopic } from "@/types";
+import { SelectedTopic, ThemeColors } from "@/types";
 import AgingResourcesContent from "./AgingResourcesContent";
 import ComingSoonContent from "./ComingSoonContent";
 
@@ -7,9 +7,65 @@ interface ResourcesDisplayProps {
   selectedTopic: SelectedTopic;
 }
 
+// Theme color mapping based on research area
+const getThemeColors = (topic: SelectedTopic): ThemeColors => {
+  switch (topic) {
+    case "aging":
+      return {
+        primary: "text-[#00d2a0]",
+        secondary: "text-[#33deb3]",
+        accent: "bg-[#00d2a0]",
+        accentHover: "hover:bg-[#33deb3]",
+        gradient: "from-[#00d2a0] to-[#66e6c6]",
+        gradientHover: "hover:from-[#33deb3] hover:to-[#80ebd1]",
+        icon: "text-[#00d2a0]",
+        button: "bg-[#00d2a0] hover:bg-[#33deb3]",
+        buttonText: "text-black",
+      };
+    case "space":
+      return {
+        primary: "text-blue-400",
+        secondary: "text-blue-300",
+        accent: "bg-blue-400",
+        accentHover: "hover:bg-blue-300",
+        gradient: "from-blue-400 to-blue-200",
+        gradientHover: "hover:from-blue-300 hover:to-blue-100",
+        icon: "text-blue-400",
+        button: "bg-blue-400 hover:bg-blue-300",
+        buttonText: "text-black",
+      };
+    case "education":
+      return {
+        primary: "text-yellow-400",
+        secondary: "text-yellow-300",
+        accent: "bg-yellow-400",
+        accentHover: "hover:bg-yellow-300",
+        gradient: "from-yellow-400 to-yellow-200",
+        gradientHover: "hover:from-yellow-300 hover:to-yellow-100",
+        icon: "text-yellow-400",
+        button: "bg-yellow-400 hover:bg-yellow-300",
+        buttonText: "text-black",
+      };
+    default:
+      return {
+        primary: "text-gray-400",
+        secondary: "text-gray-300",
+        accent: "bg-gray-400",
+        accentHover: "hover:bg-gray-300",
+        gradient: "from-gray-400 to-gray-200",
+        gradientHover: "hover:from-gray-300 hover:to-gray-100",
+        icon: "text-gray-400",
+        button: "bg-gray-400 hover:bg-gray-300",
+        buttonText: "text-black",
+      };
+  }
+};
+
 export default function ResourcesDisplay({
   selectedTopic,
 }: ResourcesDisplayProps) {
+  const themeColors = getThemeColors(selectedTopic);
+
   return (
     <div className="min-h-[300px] md:min-h-[400px] flex items-center justify-center">
       <AnimatePresence mode="wait">
@@ -37,7 +93,7 @@ export default function ResourcesDisplay({
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="w-full"
           >
-            <AgingResourcesContent />
+            <AgingResourcesContent themeColors={themeColors} />
           </motion.div>
         )}
 
@@ -54,6 +110,7 @@ export default function ResourcesDisplay({
               topic="Space"
               icon="🚀"
               description="Advanced propulsion, space habitats, and interplanetary exploration technologies."
+              themeColors={themeColors}
             />
           </motion.div>
         )}
@@ -71,6 +128,7 @@ export default function ResourcesDisplay({
               topic="Education"
               icon="🎓"
               description="Revolutionary approaches to learning, cognitive enhancement, and educational technology."
+              themeColors={themeColors}
             />
           </motion.div>
         )}

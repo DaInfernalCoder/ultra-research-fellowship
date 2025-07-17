@@ -1,11 +1,20 @@
 import Image from "next/image";
+import { ThemeColors } from "@/types";
 
-export default function AgingResourcesContent() {
+interface AgingResourcesContentProps {
+  themeColors: ThemeColors;
+}
+
+export default function AgingResourcesContent({
+  themeColors,
+}: AgingResourcesContentProps) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
       {/* Left Side - Information */}
       <div>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">
+        <h2
+          className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 ${themeColors.primary}`}
+        >
           Aging Research
           <br />
           Fellowship
@@ -23,7 +32,9 @@ export default function AgingResourcesContent() {
         </p>
 
         <div className="mb-6 md:mb-8">
-          <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">
+          <h3
+            className={`text-lg md:text-xl font-bold mb-3 md:mb-4 ${themeColors.primary}`}
+          >
             Research Areas Include:
           </h3>
           <ul className="space-y-2 text-gray-300 text-sm md:text-base">
@@ -38,7 +49,9 @@ export default function AgingResourcesContent() {
 
       {/* Right Side - Application Form */}
       <div className="border border-gray-700 rounded-lg p-6 md:p-8">
-        <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">
+        <h3
+          className={`text-xl md:text-2xl font-bold mb-4 md:mb-6 ${themeColors.primary}`}
+        >
           Ready to Apply?
         </h3>
 
@@ -59,7 +72,7 @@ export default function AgingResourcesContent() {
             href="https://www.astralcodexten.com/p/your-review-alpha-school"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-yellow-400 hover:text-yellow-300 underline"
+            className={`bg-gradient-to-r ${themeColors.gradient} bg-clip-text text-transparent ${themeColors.gradientHover} underline`}
           >
             Here&apos;s an example
           </a>{" "}
@@ -78,7 +91,7 @@ export default function AgingResourcesContent() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-yellow-400 flex-shrink-0"
+              className={`${themeColors.icon} flex-shrink-0`}
             >
               <path d="M20 6 9 17l-5-5" />
             </svg>
@@ -96,7 +109,7 @@ export default function AgingResourcesContent() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-yellow-400 flex-shrink-0"
+              className={`${themeColors.icon} flex-shrink-0`}
             >
               <path d="M20 6 9 17l-5-5" />
             </svg>
@@ -114,7 +127,7 @@ export default function AgingResourcesContent() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="text-yellow-400 flex-shrink-0"
+              className={`${themeColors.icon} flex-shrink-0`}
             >
               <path d="M20 6 9 17l-5-5" />
             </svg>
@@ -165,7 +178,7 @@ export default function AgingResourcesContent() {
           href="https://forms.gle/HMB4AXCAg1NopJ639"
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full bg-yellow-400 text-black font-medium py-3 md:py-4 px-6 rounded hover:bg-yellow-300 transition-colors text-base md:text-lg text-center"
+          className={`block w-full ${themeColors.button} ${themeColors.buttonText} font-medium py-3 md:py-4 px-6 rounded transition-colors text-base md:text-lg text-center`}
         >
           Apply for Aging Research
         </a>

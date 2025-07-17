@@ -16,7 +16,7 @@ export default function CTASection({ onApplyClick }: CTASectionProps) {
 
         <button
           onClick={onApplyClick}
-          className="bg-yellow-400 text-black font-medium py-3 md:py-4 px-6 md:px-8 rounded text-base md:text-lg hover:bg-yellow-300 transition-colors"
+          className="bg-gradient-to-r from-blue-400 to-white text-black font-medium py-3 md:py-4 px-6 md:px-8 rounded text-base md:text-lg hover:from-blue-300 hover:to-gray-100 transition-all"
         >
           Choose a Topic
         </button>

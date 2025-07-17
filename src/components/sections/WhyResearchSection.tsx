@@ -14,7 +14,7 @@ export default function WhyResearchSection() {
           {/* Reason 1: College Applications */}
           <div className="text-left">
             <div className="flex items-start gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-7 h-7 md:w-8 md:h-8 bg-yellow-400 text-black font-bold rounded-full flex items-center justify-center text-base md:text-lg flex-shrink-0">
+              <div className="w-7 h-7 md:w-8 md:h-8 bg-gradient-to-r from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-base md:text-lg flex-shrink-0">
                 1
               </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold">
@@ -35,7 +35,7 @@ export default function WhyResearchSection() {
 
               <ul className="text-gray-300 space-y-2 ml-10 md:ml-12">
                 <li className="flex items-baseline gap-3">
-                  <span className="text-yellow-400 text-base md:text-lg">
+                  <span className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent text-base md:text-lg">
                     •
                   </span>
                   <span className="text-sm md:text-base">
@@ -52,7 +52,7 @@ export default function WhyResearchSection() {
 
               <ul className="text-gray-300 space-y-2 ml-10 md:ml-12">
                 <li className="flex items-baseline gap-3">
-                  <span className="text-yellow-400 text-base md:text-lg">
+                  <span className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent text-base md:text-lg">
                     •
                   </span>
                   <span className="text-sm md:text-base">
@@ -61,7 +61,7 @@ export default function WhyResearchSection() {
                   </span>
                 </li>
                 <li className="flex items-baseline gap-3">
-                  <span className="text-yellow-400 text-base md:text-lg">
+                  <span className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent text-base md:text-lg">
                     •
                   </span>
                   <span className="text-sm md:text-base">
@@ -80,7 +80,7 @@ export default function WhyResearchSection() {
           {/* Reason 2: Career */}
           <div className="text-left">
             <div className="flex items-start gap-3 md:gap-4 mb-4 md:mb-6">
-              <div className="w-7 h-7 md:w-8 md:h-8 bg-yellow-400 text-black font-bold rounded-full flex items-center justify-center text-base md:text-lg flex-shrink-0">
+              <div className="w-7 h-7 md:w-8 md:h-8 bg-gradient-to-r from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-base md:text-lg flex-shrink-0">
                 2
               </div>
               <h3 className="text-lg sm:text-xl md:text-2xl font-bold">
@@ -91,7 +91,7 @@ export default function WhyResearchSection() {
             <div className="space-y-3 md:space-y-4">
               <ul className="text-gray-300 space-y-3 ml-10 md:ml-12">
                 <li className="flex items-baseline gap-3">
-                  <span className="text-yellow-400 text-base md:text-lg">
+                  <span className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent text-base md:text-lg">
                     •
                   </span>
                   <span className="leading-relaxed text-sm md:text-base">
@@ -100,7 +100,7 @@ export default function WhyResearchSection() {
                   </span>
                 </li>
                 <li className="flex items-baseline gap-3">
-                  <span className="text-yellow-400 text-base md:text-lg">
+                  <span className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent text-base md:text-lg">
                     •
                   </span>
                   <span className="leading-relaxed text-sm md:text-base">
