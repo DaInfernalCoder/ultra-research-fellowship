@@ -91,7 +91,7 @@ export default function PartnerLabsSection() {
               </div>
               <h3 className="text-lg font-semibold mb-3">Get Matched</h3>
               <p className="text-gray-400 text-sm leading-relaxed">
-                We connect you with a PhD researcher in your field
+                We connect you with a PhD researcher in your field if accepted
               </p>
             </div>
 
