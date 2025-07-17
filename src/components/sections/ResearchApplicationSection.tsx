@@ -1,8 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ResearchView } from "@/types";
+import { ResearchView, SelectedTopic } from "@/types";
 import ResearchFocusSection from "./ResearchFocusSection";
+import ResourcesDisplay from "./ResourcesDisplay";
 import AgingResearchSection from "./AgingResearchSection";
 
 interface ResearchApplicationSectionProps {
@@ -14,10 +16,12 @@ export default function ResearchApplicationSection({
   currentView,
   setCurrentView,
 }: ResearchApplicationSectionProps) {
+  const [selectedTopic, setSelectedTopic] = useState<SelectedTopic>(null);
+
   return (
     <section
       id="research-focus"
-      className="min-h-screen flex items-center justify-center py-20 md:py-32 px-12 md:px-16 lg:px-20"
+      className="min-h-screen flex items-center justify-center py-16 md:py-24 px-6 md:px-12 lg:px-16 xl:px-20"
     >
       <div className="max-w-7xl mx-auto w-full">
         <AnimatePresence mode="wait">
@@ -28,11 +32,15 @@ export default function ResearchApplicationSection({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="space-y-8 md:space-y-12"
             >
               <ResearchFocusSection
                 currentView={currentView}
-                setCurrentView={setCurrentView}
+                selectedTopic={selectedTopic}
+                setSelectedTopic={setSelectedTopic}
               />
+
+              <ResourcesDisplay selectedTopic={selectedTopic} />
             </motion.div>
           )}
 

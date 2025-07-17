@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function PartnerLabsSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center py-20 md:py-32 px-12 md:px-16 lg:px-20">
+    <section className="min-h-screen flex items-center justify-center py-20 md:py-32 px-6 md:px-12 lg:px-16 xl:px-20">
       <div className="max-w-6xl mx-auto">
         {/* Partner Labs */}
         <div className="text-center mb-20">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-16">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-12 md:mb-16">
             Our Partner Labs
           </h2>
 
           {/* Lab Logos */}
-          <div className="flex items-center justify-center gap-16 md:gap-24">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12 md:gap-16 lg:gap-24">
             <div className="flex items-center">
               <a
                 href="https://age1.com/"
@@ -24,7 +24,7 @@ export default function PartnerLabsSection() {
                   alt="Age1"
                   width={200}
                   height={80}
-                  className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+                  className="h-12 sm:h-14 md:h-16 lg:h-20 xl:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
                 />
               </a>
             </div>
@@ -40,7 +40,7 @@ export default function PartnerLabsSection() {
                   alt="Norn Group"
                   width={200}
                   height={80}
-                  className="h-16 md:h-20 lg:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
+                  className="h-12 sm:h-14 md:h-16 lg:h-20 xl:h-24 w-auto opacity-80 hover:opacity-100 transition-opacity cursor-pointer"
                 />
               </a>
             </div>
@@ -49,17 +49,17 @@ export default function PartnerLabsSection() {
 
         {/* How It Works */}
         <div className="text-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8">
             How It Works
           </h2>
 
-          <p className="text-lg md:text-xl text-gray-300 mb-16 max-w-3xl mx-auto">
+          <p className="text-base md:text-lg lg:text-xl text-gray-300 mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed">
             Stop wasting time cold-emailing thousands of professors. Start
             becoming an expert in your field.
           </p>
 
           {/* Steps */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {/* Step 1 */}
             <div className="text-center">
               <div className="w-12 h-12 bg-yellow-400 text-black font-bold rounded-full flex items-center justify-center text-xl mb-4 mx-auto">
