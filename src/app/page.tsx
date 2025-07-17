@@ -5,6 +5,7 @@ import { ResearchView } from "@/types";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/sections/HeroSection";
+import WhyResearchSection from "@/components/sections/WhyResearchSection";
 import PartnerLabsSection from "@/components/sections/PartnerLabsSection";
 import ResearchApplicationSection from "@/components/sections/ResearchApplicationSection";
 import CTASection from "@/components/sections/CTASection";
@@ -26,6 +27,9 @@ export default function Home() {
         <Header onApplyClick={scrollToApply} />
         <HeroSection onApplyClick={scrollToApply} />
       </section>
+
+      {/* Why Research Section */}
+      <WhyResearchSection />
 
       {/* Researchers Section */}
       <PartnerLabsSection />
