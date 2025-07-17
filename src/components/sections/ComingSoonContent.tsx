@@ -14,7 +14,7 @@ export default function ComingSoonContent({
   themeColors,
 }: ComingSoonContentProps) {
   return (
-    <div className="text-center py-8 md:py-12">
+    <div className="text-center py-8 md:py-12 mx-2 md:mx-4">
       <div className="max-w-2xl mx-auto">
         <div
           className={`w-12 h-12 md:w-16 md:h-16 ${themeColors.accent} rounded-lg flex items-center justify-center mx-auto mb-4 md:mb-6`}

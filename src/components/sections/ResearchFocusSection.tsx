@@ -100,6 +100,7 @@ export default function ResearchFocusSection({
               className={`px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r ${agingTheme.gradient} ${agingTheme.buttonText} text-sm font-medium rounded ${agingTheme.gradientHover} transition-all`}
               onClick={(e) => {
                 e.stopPropagation();
+                setSelectedTopic("aging");
                 triggerConfetti();
               }}
             >
@@ -110,12 +111,15 @@ export default function ResearchFocusSection({
 
         {/* Space Research Card */}
         <div
-          className={`border rounded-lg p-4 md:p-6 hover:border-gray-600 transition-colors cursor-pointer flex-1 ${
+          className={`border rounded-lg p-4 md:p-6 hover:border-blue-400 transition-colors cursor-pointer flex-1 ${
             selectedTopic === "space"
-              ? "border-gray-500 bg-gray-500/5"
+              ? `border-blue-400 bg-blue-400/5`
               : "border-gray-700"
           }`}
-          onClick={() => setSelectedTopic("space")}
+          onClick={() => {
+            setSelectedTopic("space");
+            triggerConfetti();
+          }}
         >
           <div className="flex items-center gap-3 md:gap-4">
             <div
@@ -134,9 +138,10 @@ export default function ResearchFocusSection({
               </p>
             </div>
             <button
-              className="px-3 py-1.5 md:px-4 md:py-2 border border-gray-600 text-gray-400 text-sm font-medium rounded cursor-not-allowed"
+              className={`px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r ${spaceTheme.gradient} ${spaceTheme.buttonText} text-sm font-medium rounded ${spaceTheme.gradientHover} transition-all`}
               onClick={(e) => {
                 e.stopPropagation();
+                setSelectedTopic("space");
                 triggerConfetti();
               }}
             >
@@ -147,12 +152,15 @@ export default function ResearchFocusSection({
 
         {/* Education Research Card */}
         <div
-          className={`border rounded-lg p-4 md:p-6 hover:border-gray-600 transition-colors cursor-pointer flex-1 ${
+          className={`border rounded-lg p-4 md:p-6 hover:border-yellow-400 transition-colors cursor-pointer flex-1 ${
             selectedTopic === "education"
-              ? "border-gray-500 bg-gray-500/5"
+              ? `border-yellow-400 bg-yellow-400/5`
               : "border-gray-700"
           }`}
-          onClick={() => setSelectedTopic("education")}
+          onClick={() => {
+            setSelectedTopic("education");
+            triggerConfetti();
+          }}
         >
           <div className="flex items-center gap-3 md:gap-4">
             <div
@@ -171,9 +179,10 @@ export default function ResearchFocusSection({
               </p>
             </div>
             <button
-              className="px-3 py-1.5 md:px-4 md:py-2 border border-gray-600 text-gray-400 text-sm font-medium rounded cursor-not-allowed"
+              className={`px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r ${educationTheme.gradient} ${educationTheme.buttonText} text-sm font-medium rounded ${educationTheme.gradientHover} transition-all`}
               onClick={(e) => {
                 e.stopPropagation();
+                setSelectedTopic("education");
                 triggerConfetti();
               }}
             >
