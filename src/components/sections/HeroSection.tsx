@@ -19,7 +19,7 @@ export default function HeroSection({ onApplyClick }: HeroSectionProps) {
         <br />
         <span className="relative">
           problems.
-          <div className="absolute -bottom-1 left-0 right-2 h-0.5 md:h-1 bg-gradient-to-r from-blue-400 to-white"></div>
+          <div className="absolute -bottom-1 left-0 right-2 h-0.5 md:h-1 bg-gradient-to-b from-blue-400 to-white"></div>
         </span>
       </h1>
 

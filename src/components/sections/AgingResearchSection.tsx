@@ -92,7 +92,7 @@ export default function AgingResearchSection({
               href="https://www.astralcodexten.com/p/your-review-alpha-school"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent hover:from-blue-300 hover:to-gray-100 underline"
+              className="bg-gradient-to-b from-blue-400 to-white bg-clip-text text-transparent hover:from-blue-300 hover:to-gray-100 underline"
             >
               Here&apos;s an example
             </a>{" "}
@@ -111,7 +111,7 @@ export default function AgingResearchSection({
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent flex-shrink-0"
+                className="bg-gradient-to-b from-blue-400 to-white bg-clip-text text-transparent flex-shrink-0"
               >
                 <path d="M20 6 9 17l-5-5" />
               </svg>
@@ -129,7 +129,7 @@ export default function AgingResearchSection({
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent flex-shrink-0"
+                className="bg-gradient-to-b from-blue-400 to-white bg-clip-text text-transparent flex-shrink-0"
               >
                 <path d="M20 6 9 17l-5-5" />
               </svg>
@@ -147,7 +147,7 @@ export default function AgingResearchSection({
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="bg-gradient-to-r from-blue-400 to-white bg-clip-text text-transparent flex-shrink-0"
+                className="bg-gradient-to-b from-blue-400 to-white bg-clip-text text-transparent flex-shrink-0"
               >
                 <path d="M20 6 9 17l-5-5" />
               </svg>
@@ -198,7 +198,7 @@ export default function AgingResearchSection({
             href="https://forms.gle/HMB4AXCAg1NopJ639"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full bg-gradient-to-r from-blue-400 to-white text-black font-medium py-3 md:py-4 px-6 rounded hover:from-blue-300 hover:to-gray-100 transition-all text-base md:text-lg text-center"
+            className="block w-full bg-gradient-to-b from-blue-400 to-white text-black font-medium py-3 md:py-4 px-6 rounded hover:from-blue-300 hover:to-gray-100 transition-all text-base md:text-lg text-center"
           >
             Apply for Aging Research
           </a>

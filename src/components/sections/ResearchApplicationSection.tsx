@@ -39,9 +39,7 @@ export default function ResearchApplicationSection({
               setSelectedTopic={setSelectedTopic}
             />
 
-            <ResourcesDisplay
-              selectedTopic={selectedTopic}
-            />
+            <ResourcesDisplay selectedTopic={selectedTopic} />
           </motion.div>
         )}
 

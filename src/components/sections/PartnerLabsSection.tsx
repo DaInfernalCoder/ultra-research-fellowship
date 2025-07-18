@@ -18,7 +18,7 @@ export default function PartnerLabsSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {/* Step 1 */}
           <div className="text-center">
-            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-lg md:text-xl mb-4 md:mb-6 mx-auto">
+            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-b from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-lg md:text-xl mb-4 md:mb-6 mx-auto">
               1
             </div>
             <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
@@ -31,7 +31,7 @@ export default function PartnerLabsSection() {
 
           {/* Step 2 */}
           <div className="text-center">
-            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-lg md:text-xl mb-4 md:mb-6 mx-auto">
+            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-b from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-lg md:text-xl mb-4 md:mb-6 mx-auto">
               2
             </div>
             <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
@@ -44,7 +44,7 @@ export default function PartnerLabsSection() {
 
           {/* Step 3 */}
           <div className="text-center">
-            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-lg md:text-xl mb-4 md:mb-6 mx-auto">
+            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-b from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-lg md:text-xl mb-4 md:mb-6 mx-auto">
               3
             </div>
             <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">
@@ -92,7 +92,7 @@ export default function PartnerLabsSection() {
 
           {/* Step 4 */}
           <div className="text-center">
-            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-lg md:text-xl mb-4 md:mb-6 mx-auto">
+            <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-b from-blue-400 to-white text-black font-bold rounded-full flex items-center justify-center text-lg md:text-xl mb-4 md:mb-6 mx-auto">
               4
             </div>
             <h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4">

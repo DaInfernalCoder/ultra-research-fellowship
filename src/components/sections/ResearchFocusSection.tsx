@@ -13,39 +13,39 @@ const getThemeColors = (
   switch (topic) {
     case "aging":
       return {
-        primary: "text-[#00d2a0]",
-        secondary: "text-[#33deb3]",
-        accent: "bg-[#00d2a0]",
-        accentHover: "hover:bg-[#33deb3]",
-        gradient: "from-[#00d2a0] to-[#66e6c6]",
-        gradientHover: "hover:from-[#33deb3] hover:to-[#80ebd1]",
-        icon: "text-[#00d2a0]",
-        button: "bg-[#00d2a0] hover:bg-[#33deb3]",
-        buttonText: "text-black",
+        primary: "text-[#699000]",
+        secondary: "text-[#7ba300]",
+        accent: "bg-[#699000]",
+        accentHover: "hover:bg-[#7ba300]",
+        gradient: "from-[#699000] to-[#7ba300]",
+        gradientHover: "hover:from-[#7ba300] hover:to-[#8db300]",
+        icon: "text-[#699000]",
+        button: "bg-[#699000] hover:bg-[#7ba300]",
+        buttonText: "text-white",
       };
     case "space":
       return {
-        primary: "text-blue-400",
-        secondary: "text-blue-300",
-        accent: "bg-blue-400",
-        accentHover: "hover:bg-blue-300",
-        gradient: "from-blue-400 to-blue-200",
-        gradientHover: "hover:from-blue-300 hover:to-blue-100",
-        icon: "text-blue-400",
-        button: "bg-blue-400 hover:bg-blue-300",
-        buttonText: "text-black",
+        primary: "text-[#004eb1]",
+        secondary: "text-[#1a65c4]",
+        accent: "bg-[#004eb1]",
+        accentHover: "hover:bg-[#1a65c4]",
+        gradient: "from-[#004eb1] to-[#1a65c4]",
+        gradientHover: "hover:from-[#1a65c4] hover:to-[#337cd7]",
+        icon: "text-[#004eb1]",
+        button: "bg-[#004eb1] hover:bg-[#1a65c4]",
+        buttonText: "text-white",
       };
     case "education":
       return {
-        primary: "text-yellow-400",
-        secondary: "text-yellow-300",
-        accent: "bg-yellow-400",
-        accentHover: "hover:bg-yellow-300",
-        gradient: "from-yellow-400 to-yellow-200",
-        gradientHover: "hover:from-yellow-300 hover:to-yellow-100",
-        icon: "text-yellow-400",
-        button: "bg-yellow-400 hover:bg-yellow-300",
-        buttonText: "text-black",
+        primary: "text-[#bc8034]",
+        secondary: "text-[#d19447]",
+        accent: "bg-[#bc8034]",
+        accentHover: "hover:bg-[#d19447]",
+        gradient: "from-[#bc8034] to-[#d19447]",
+        gradientHover: "hover:from-[#d19447] hover:to-[#e6a85a]",
+        icon: "text-[#bc8034]",
+        button: "bg-[#bc8034] hover:bg-[#d19447]",
+        buttonText: "text-white",
       };
   }
 };
@@ -71,9 +71,9 @@ export default function ResearchFocusSection({
       <div className="flex flex-col sm:flex-row gap-4 md:gap-6 mx-2 md:mx-4">
         {/* Aging Research Card */}
         <div
-          className={`border rounded-lg p-4 md:p-6 hover:border-[#00d2a0] transition-colors cursor-pointer flex-1 ${
+          className={`border rounded-lg p-4 md:p-6 hover:border-[#699000] transition-colors cursor-pointer flex-1 ${
             selectedTopic === "aging"
-              ? "border-[#00d2a0] bg-[#00d2a0]/5"
+              ? "border-[#699000] bg-[#699000]/5"
               : "border-gray-700"
           }`}
           onClick={() => setSelectedTopic("aging")}
@@ -82,7 +82,7 @@ export default function ResearchFocusSection({
             <div
               className={`w-8 h-8 md:w-10 md:h-10 bg-gradient-to-r ${agingTheme.gradient} rounded-lg flex items-center justify-center flex-shrink-0`}
             >
-              <span className="text-lg md:text-xl">💛</span>
+              <span className="text-lg md:text-xl">🧬</span>
             </div>
             <div className="flex-1">
               <h3
@@ -108,9 +108,9 @@ export default function ResearchFocusSection({
 
         {/* Space Research Card */}
         <div
-          className={`border rounded-lg p-4 md:p-6 hover:border-blue-400 transition-colors cursor-pointer flex-1 ${
+          className={`border rounded-lg p-4 md:p-6 hover:border-[#004eb1] transition-colors cursor-pointer flex-1 ${
             selectedTopic === "space"
-              ? `border-blue-400 bg-blue-400/5`
+              ? `border-[#004eb1] bg-[#004eb1]/5`
               : "border-gray-700"
           }`}
           onClick={() => {
@@ -147,9 +147,9 @@ export default function ResearchFocusSection({
 
         {/* Education Research Card */}
         <div
-          className={`border rounded-lg p-4 md:p-6 hover:border-yellow-400 transition-colors cursor-pointer flex-1 ${
+          className={`border rounded-lg p-4 md:p-6 hover:border-[#bc8034] transition-colors cursor-pointer flex-1 ${
             selectedTopic === "education"
-              ? `border-yellow-400 bg-yellow-400/5`
+              ? `border-[#bc8034] bg-[#bc8034]/5`
               : "border-gray-700"
           }`}
           onClick={() => {
