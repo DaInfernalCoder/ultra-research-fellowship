@@ -80,7 +80,7 @@ export default function ResearchFocusSection({
         >
           <div className="flex items-center gap-3 md:gap-4">
             <div
-              className={`w-8 h-8 md:w-10 md:h-10 bg-gradient-to-r ${agingTheme.gradient} rounded-lg flex items-center justify-center flex-shrink-0`}
+              className={`w-8 h-8 md:w-10 md:h-10 ${agingTheme.accent} rounded-lg flex items-center justify-center flex-shrink-0`}
             >
               <span className="text-lg md:text-xl">🧬</span>
             </div>
@@ -95,7 +95,7 @@ export default function ResearchFocusSection({
               </p>
             </div>
             <button
-              className={`px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r ${agingTheme.gradient} ${agingTheme.buttonText} text-sm font-medium rounded ${agingTheme.gradientHover} transition-all`}
+              className={`px-3 py-1.5 md:px-4 md:py-2 ${agingTheme.button} ${agingTheme.buttonText} text-sm font-medium rounded transition-all`}
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedTopic("aging");
@@ -119,7 +119,7 @@ export default function ResearchFocusSection({
         >
           <div className="flex items-center gap-3 md:gap-4">
             <div
-              className={`w-8 h-8 md:w-10 md:h-10 bg-gradient-to-r ${spaceTheme.gradient} rounded-lg flex items-center justify-center flex-shrink-0`}
+              className={`w-8 h-8 md:w-10 md:h-10 ${spaceTheme.accent} rounded-lg flex items-center justify-center flex-shrink-0`}
             >
               <span className="text-lg md:text-xl">🚀</span>
             </div>
@@ -134,7 +134,7 @@ export default function ResearchFocusSection({
               </p>
             </div>
             <button
-              className={`px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r ${spaceTheme.gradient} ${spaceTheme.buttonText} text-sm font-medium rounded ${spaceTheme.gradientHover} transition-all`}
+              className={`px-3 py-1.5 md:px-4 md:py-2 ${spaceTheme.button} ${spaceTheme.buttonText} text-sm font-medium rounded transition-all`}
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedTopic("space");
@@ -158,7 +158,7 @@ export default function ResearchFocusSection({
         >
           <div className="flex items-center gap-3 md:gap-4">
             <div
-              className={`w-8 h-8 md:w-10 md:h-10 bg-gradient-to-r ${educationTheme.gradient} rounded-lg flex items-center justify-center flex-shrink-0`}
+              className={`w-8 h-8 md:w-10 md:h-10 ${educationTheme.accent} rounded-lg flex items-center justify-center flex-shrink-0`}
             >
               <span className="text-lg md:text-xl">🎓</span>
             </div>
@@ -173,7 +173,7 @@ export default function ResearchFocusSection({
               </p>
             </div>
             <button
-              className={`px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r ${educationTheme.gradient} ${educationTheme.buttonText} text-sm font-medium rounded ${educationTheme.gradientHover} transition-all`}
+              className={`px-3 py-1.5 md:px-4 md:py-2 ${educationTheme.button} ${educationTheme.buttonText} text-sm font-medium rounded transition-all`}
               onClick={(e) => {
                 e.stopPropagation();
                 setSelectedTopic("education");
