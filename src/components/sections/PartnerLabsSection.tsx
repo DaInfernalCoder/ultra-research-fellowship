@@ -19,9 +19,9 @@ export default function PartnerLabsSection() {
     "Norn Group collaborates with over 100 labs worldwide, creating a powerful global network that drives forward radical longevity science. Their strength lies in uniting top researchers, institutions, and companies to push the boundaries of what is possible in aging and health.";
 
   return (
-    <section className="min-h-screen flex items-center justify-center py-20 md:py-32 px-6 md:px-12 lg:px-16 xl:px-20 mx-auto w-full">
+    <section className="min-h-screen flex items-center justify-center py-20 md:py-32 px-6 md:px-12 lg:px-16 xl:px-20 w-full">
       {/* How It Works */}
-      <div className="w-full text-center">
+      <div className="w-full text-center  mx-auto">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 md:mb-8">
           How It Works
         </h2>
@@ -32,11 +32,11 @@ export default function PartnerLabsSection() {
         </p>
 
         {/* Funnel */}
-        <div className="relative w-full mx-auto">
+        <div className="relative w-screen -mx-6 md:-mx-12 lg:-mx-16 xl:-mx-20">
           <Image
             src="/space_funnel.png"
             alt="Research Process Funnel"
-            width={4000}
+            width={4040}
             height={4000}
             className="w-full h-auto"
             priority
@@ -102,7 +102,9 @@ export default function PartnerLabsSection() {
           >
             <div className="bg-white text-black p-4 rounded-lg shadow-xl max-w-xs text-sm leading-relaxed border border-gray-200">
               <div className="font-semibold mb-2 text-gray-900">
-                {hoveredLogo === "age1" ? "Age1" : "Norn Group"}
+                {hoveredLogo === "age1"
+                  ? "Age1 - Partner Superconnector"
+                  : "Norn Group - Partner Superconnector"}
               </div>
               <div className="text-gray-700">
                 {hoveredLogo === "age1" ? age1Description : nornDescription}
